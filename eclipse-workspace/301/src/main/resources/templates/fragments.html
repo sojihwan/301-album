@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http:/www.thymeleaf.org">
+<head th:fragment="head (title)">
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼공일 갤러리</title>
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/title.jpg"  >
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700"/>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"/>
+    <link rel="preconnect" type="text/css" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/login.css}"/>
+</head>
+
+<header th:fragment="header">
+	<nav>
+		<ul>
+			<li><a th:href="@{/album}">앨범</a></li>
+			<li><a th:href="@{/abc}">두 번째 메뉴</a></li>
+		</ul>
+	</nav>
+</header>
+<footer th:fragment="footer">
+	
+</footer>
+
+
+</html>
